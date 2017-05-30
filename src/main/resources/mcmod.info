@@ -5,11 +5,11 @@
   "description": "Data collection mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://github.com/fchapeau/bigblocker",
   "updateUrl": "",
   "authorList": ["Chapeau"],
   "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "logoFile": "../../../gfx/bigblocker/logo.png",
   "screenshots": [],
   "dependencies": []
 }
