@@ -25,6 +25,7 @@ public class BigBlocker
     @EventHandler
     public void init(FMLInitializationEvent e) {
         proxy.init(e);
+        
     }
 
     @EventHandler
