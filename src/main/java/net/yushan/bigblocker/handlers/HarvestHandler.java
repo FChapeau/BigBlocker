@@ -1,6 +1,7 @@
 package net.yushan.bigblocker.handlers;
 
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 /**
@@ -8,7 +9,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
  */
 public class HarvestHandler {
     @SubscribeEvent
-    public void HandleHarvestCheck (PlayerEvent.HarvestCheck e){
-        System.out.println("Player tried to harvest " + e.getTargetBlock().getBlock().getLocalizedName());
+    public void HandleBreakSpeedEvent (PlayerEvent.BreakSpeed e){
+        System.out.println("Player tried to harvest " + e.getState().getBlock().getLocalizedName());
+    }
+
+    @SubscribeEvent
+    public void HandleBreakEvent (BlockEvent.BreakEvent e){
+        System.out.println("Block broken");
     }
 }

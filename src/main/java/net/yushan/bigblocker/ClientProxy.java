@@ -18,8 +18,6 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
-
-        MinecraftForge.EVENT_BUS.register(new HarvestHandler());
     }
 
     @Override
